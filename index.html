@@ -15,7 +15,7 @@
             <ul>
                 <li><a href="#shop">Shop</a></li>
                 <li><a href="#">Archief</a></li>
-                <li><a href="https://www.instagram.com/ewiliepiellie?igsh=MXB5ZjE0bTNhc2V3Mw==" target="_blank" rel="noopener">Contact</a></li>
+                <li><a href="#" target="_blank">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -29,9 +29,19 @@
         </div>
     </section>
 
-    <main id="shop">
+    <main id="shop" class="shop-container">
+        
+        <aside class="sidebar">
+            <h3>FILTERS</h3>
+            <div class="filter-group">
+                <label><input type="checkbox" class="filter-check" value="all" checked> ALL ITEMS</label>
+                <label><input type="checkbox" class="filter-check" value="sale"> SALE</label>
+                <label><input type="checkbox" class="filter-check" value="limited"> LIMITED</label>
+            </div>
+        </aside>
+
         <div class="product-grid">
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/adidaswhite.jpg" alt="Adidas White Wings">
                 <div class="product-footer">
@@ -40,7 +50,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/batmanjacket.jpg" alt="Batman Vintage Jacket">
                 <div class="product-footer">
@@ -49,7 +59,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/margiela.jpg" alt="Maison Margiela Tee">
                 <div class="product-footer">
@@ -58,7 +68,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="limited">
                 <div class="badge limited">LIMITED EDITION</div>
                 <img src="images/D&G.jpg" alt="D&G Archive Bomber">
                 <div class="product-footer">
@@ -67,7 +77,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/screamshirt.jpg" alt="Scream Movie Tee">
                 <div class="product-footer">
@@ -76,7 +86,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="limited">
                 <div class="badge limited">LIMITED EDITION</div>
                 <img src="images/beaniekiller.jpg" alt="The Killer Beanie">
                 <div class="product-footer">
@@ -85,7 +95,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/vivibomber.jpg" alt="Vivienne Westwood Bomber">
                 <div class="product-footer">
@@ -94,7 +104,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/marlboroshirt.jpg" alt="Vintage Marlboro Tee">
                 <div class="product-footer">
@@ -103,7 +113,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="limited">
                 <div class="badge limited">LIMITED EDITION</div>
                 <img src="images/femmefatale.jpg" alt="Femme Fatale Hoodie">
                 <div class="product-footer">
@@ -112,7 +122,7 @@
                 </div>
             </article>
 
-            <article class="product">
+            <article class="product" data-category="sale">
                 <div class="badge sale">SALE</div>
                 <img src="images/edhardyskirt.jpg" alt="Ed Hardy Denim Skirt">
                 <div class="product-footer">
@@ -127,5 +137,6 @@
         <p>&copy; 2026 ARCHIVE_SHOP</p>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
