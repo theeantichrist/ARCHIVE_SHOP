@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archive Shop | Your Cart</title>
+    <title>Archive Shop | Cart</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@800&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header>
         <nav>
             <h1 class="logo">YOUR CART</h1>
@@ -29,20 +28,15 @@
                         <th>Total</th>
                     </tr>
                 </thead>
-                <tbody id="cart-items"></tbody>
+                <tbody id="cart-content"></tbody>
             </table>
-
             <div class="cart-summary">
                 <h2>Grand Total: €<span id="grand-total">0.00</span></h2>
-                <button id="clear-cart" class="cta-button" style="margin-top: 20px; cursor: pointer;">EMPTY CART</button>
+                <button id="clear-cart" class="buy-btn" style="width: 200px;">EMPTY CART</button>
             </div>
         </div>
     </main>
-
-    <footer>
-        <p>&copy; 2026 ARCHIVE_SHOP</p>
-    </footer>
-
+    <footer><p>&copy; 2026 ARCHIVE_SHOP</p></footer>
     <script src="cart.js"></script>
 </body>
 </html>
