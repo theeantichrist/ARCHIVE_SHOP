@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@800&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="cart-page">
     <header>
         <nav>
             <h1 class="logo">YOUR CART</h1>
@@ -17,8 +17,8 @@
         </nav>
     </header>
 
-    <main class="shop-container">
-        <div style="width: 100%;">
+    <main class="cart-container">
+        <div class="cart-content">
             <table class="cart-table">
                 <thead>
                     <tr>
@@ -28,14 +28,22 @@
                         <th>Total</th>
                     </tr>
                 </thead>
-                <tbody id="cart-content"></tbody>
+                <tbody id="cart-items"></tbody>
             </table>
+            
             <div class="cart-summary">
-                <h2>Grand Total: €<span id="grand-total">0.00</span></h2>
-                <button id="clear-cart" class="buy-btn" style="width: 200px;">EMPTY CART</button>
+                <div class="grand-total">
+                    <span>GRAND TOTAL:</span>
+                    <span id="total-price">€0.00</span>
+                </div>
+                <div class="cart-actions">
+                    <button id="empty-cart" class="secondary-btn">EMPTY CART</button>
+                    <button class="cta-button">CHECKOUT</button>
+                </div>
             </div>
         </div>
     </main>
+
     <footer><p>&copy; 2026 ARCHIVE_SHOP</p></footer>
     <script src="cart.js"></script>
 </body>
